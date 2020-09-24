@@ -26,7 +26,6 @@ export class ReComponent implements OnInit {
     var str = divtext.innerHTML;
     let er = new RegExp(form.value.reg,"\g");
     var myArray;
-    var positions = [];
     var aux = 0;
     var count = 0;
     while ((myArray = er.exec(str)) !== null) {
