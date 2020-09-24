@@ -20,9 +20,6 @@ export class ReComponent implements OnInit {
 
   onSubmit(form: { value: { reg: string | RegExp; }; },divtext: any) {
 
-    console.log("exp: ",form.value.reg);
-    console.log("div: ",divtext);
-    console.log("inner: ",divtext.innerHTML);
     var str = divtext.innerHTML;
     let er = new RegExp(form.value.reg,"\g");
     var myArray;
@@ -33,10 +30,9 @@ export class ReComponent implements OnInit {
       var j =  er.lastIndex;
       divtext.innerHTML=divtext.innerHTML.slice(0,i+aux) + "<span style=\"color:green;\">"+divtext.innerHTML.slice(i+aux);
       divtext.innerHTML=divtext.innerHTML.slice(0,j+27+aux) + "</span>"+divtext.innerHTML.slice(j+27+aux);
-      aux+=34;//<span style="color:green;">
+      aux+=34;
       count++;
     }
-    // divtext.innerHTML = "<span style=\"color:green\";>"+divtext.innerHTML+"</span>";
     this.coincide = er.test(str);
     if(this.coincide){
       this.msg="Se encontró "+count+" coincidencias";
