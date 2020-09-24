@@ -30,10 +30,8 @@ export class ReComponent implements OnInit {
     var aux = 0;
     var count = 0;
     while ((myArray = er.exec(str)) !== null) {
-      var msg = 'Se ha encontrado ' + myArray[0] + '. ';
       var i = er.lastIndex-myArray[0].length;
       var j =  er.lastIndex;
-      msg += 'La coincidencia empieza en '+ i +' y termina en' + j;
       divtext.innerHTML=divtext.innerHTML.slice(0,i+aux) + "<span style=\"color:green;\">"+divtext.innerHTML.slice(i+aux);
       divtext.innerHTML=divtext.innerHTML.slice(0,j+27+aux) + "</span>"+divtext.innerHTML.slice(j+27+aux);
       aux+=34;//<span style="color:green;">
