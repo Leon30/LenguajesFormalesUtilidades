@@ -5,11 +5,47 @@ form{
   flex-direction: column;
 }
 
+html { background-color: rgb(175, 215, 85); }
 #expregd{
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 #regexp{
-  width: 93%;
+  width: calc(100% - 90px);
+}
+
+#aut{
+  width: 90px;
+  background-color: rgb(175, 215, 85);
+  float: right;
+}
+#comButton{
+  width: 40%;
+  background-color: rgb(175, 215, 85);
+  margin: auto;
+}
+
+textarea{
+  width: 80%;
+  height: 60%;
+  margin: auto;
+}
+
+.greenText{
+  color:green;
+}
+
+#textreg{
+  border:black solid 1px;
+  padding:20px;
+  width: 80%;
+  height: 400px;
+  margin-top: 10px;
+  margin: auto;
+ 
+#expregd{
+  display: inline-block;
+  width: 100%;
 }

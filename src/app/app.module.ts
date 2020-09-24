@@ -14,7 +14,7 @@ import { AfdComponent } from './components/home/afd/afd.component';
 import { AfndComponent } from './components/home/afnd/afnd.component';
 import { ReComponent } from './components/home/re/re.component';
 import { HelpComponent } from './components/home/help/help.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { FormsModule } from '@angular/forms';
     ReComponent,
     HelpComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
