@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "p-formales-frontend-v2"
+    }
+  },
+  "defaultProject": "p-formales-frontend-v2",
+  "cli": {
+    "analytics": false
+  }
 }
